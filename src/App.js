@@ -3,7 +3,7 @@ import Exp from "./components/exp/Exp";
 import Intro from "./components/intro/Intro";
 import Skills from "./components/skills/Skills";
 import Topbar from "./components/topbar/Topbar";
-import "./app.css"
+import "./app.scss"
 import {useState} from 'react';
 import SideMenu from "./components/sideMenu/SideMenu";
 
