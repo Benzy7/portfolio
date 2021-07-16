@@ -24,7 +24,7 @@ export default function Intro() {
             <div className="p2">
                 <div className="infoBox">
                     <h1></h1><h1></h1>
-                    <h2>Hi there, I'am</h2>
+                    <h2>Hi there, I'm</h2>
                     <h1>Khoubaib Benzayed</h1>
                     <h3>Freelance <span ref={textRef}></span></h3>
                 </div>
