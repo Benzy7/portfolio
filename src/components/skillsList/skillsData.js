@@ -21,13 +21,13 @@ export const featuredSkills = [
     },
     {
         id: 5,
-        title: "React",
+        title: "ReactJs",
         img: "assets/react.png"
     },
     {
         id: 6,
-        title: "title",
-        img: "assets/web-1.jpg"
+        title: "ExpressJs",
+        img: "assets/express.png"
     },
 ];
 
@@ -74,26 +74,6 @@ export const mobileSkills = [
         id: 2,
         title: "Unity",
         img: "assets/unity.jpg"
-    },
-    {
-        id: 3,
-        title: "title",
-        img: "assets/web-1.jpg"
-    },
-    {
-        id: 4,
-        title: "title",
-        img: "assets/web-1.jpg"
-    },
-    {
-        id: 5,
-        title: "title",
-        img: "assets/web-1.jpg"
-    },
-    {
-        id: 6,
-        title: "title",
-        img: "assets/web-1.jpg"
     },
 ];
 
