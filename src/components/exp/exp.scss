@@ -1,3 +1,5 @@
+@import "../../glb.scss";
+
 .exp{
     background-color: darkcyan;
     display: flex;
@@ -9,6 +11,10 @@
         height: 70px;
         position: absolute;
         cursor: pointer;
+
+        @include mobile{
+            display: none;
+        }
 
         &.left{
             left: 100px;
@@ -28,6 +34,11 @@
         left: 0;
         transition: all 1s ease-out;
 
+        @include mobile{
+            height: 80vh;
+            flex-direction: column;
+            justify-content: space-between;
+        }
         .container{
             width: 100vw;
             display: flex;
@@ -43,6 +54,12 @@
                 background-color: antiquewhite;
                 border-radius: 20px 0;
 
+                @include mobile{
+                    width: 90%;
+                    height: 150px;
+                    margin: 5px 0;
+                }
+
                 .p1{
                     flex: 4;
                     height: 85%;
@@ -50,6 +67,10 @@
                     align-items: center;
                     justify-content: center;
                     background-color: antiquewhite;
+
+                    @include mobile{
+                        height: 95%;
+                    }
 
                     .p1Container{
                         width: 90%;
@@ -66,6 +87,11 @@
                         align-items: center;
                         justify-content: center;
 
+                        @include mobile{
+                            height: 50px;
+                            width: 50px;
+                        }
+
                         img{
                             width: 100%;
                         }
@@ -73,6 +99,10 @@
 
                     h2{
                         font-size: 20px;
+
+                        @include mobile{
+                            font-size: 9px;
+                        }
 
                         &.tunisair{
                             color: crimson;
@@ -89,6 +119,9 @@
 
                     p{
                         font-size: 13px;
+                        @include mobile{
+                            font-size: 8px;
+                        }
                     }
                 }
 
@@ -103,6 +136,11 @@
                     img{
                         width: 700px;
                         height: 350px;
+
+                        @include mobile{
+                            height: 150px;
+                            width: 250;
+                        }
 
                     }
                 }

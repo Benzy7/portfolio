@@ -1,6 +1,13 @@
+@import "../../glb.scss";
+
 .intro{
     background-color: white;
     display: flex;
+
+    @include mobile{
+        flex-direction: column;
+        align-items: center;
+    }
 
     .p1{
         flex: 50%;
@@ -16,9 +23,18 @@
             justify-content: center;
             float: right;
 
+            @include mobile{
+                align-items: flex-start;
+            }
+
             img{
                 width: 450px;
                 height: 450px;
+
+                @include mobile{
+                    height: 45%;
+                    width: 45%;
+                }
             }
         }
     }
@@ -36,15 +52,28 @@
             flex-direction: column;
             justify-content: center;
 
+            @include mobile{
+                padding-left: 0;
+                align-items: center;
+            }
+
             h1{
                 font-size: 50px;
                 margin: 10px 0;
+
+                @include mobile{
+                    font-size: 30px;
+                }
             }
             h2{
                 font-size: 25px;
             }
             h3{
                 font-size: 20px;
+
+                @include mobile{
+                    font-size: 15px;
+                }
 
                 span{
                     font-size: inherit;

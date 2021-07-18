@@ -1,3 +1,5 @@
+@import "../../glb.scss";
+
 .contact{
     background-color: white; 
     display: flex;
@@ -9,6 +11,11 @@
 
         img{
             width: 100%;
+
+            @include mobile{
+                width: 500px;
+                height: 300px;
+            }
         }
     }
 
@@ -33,6 +40,11 @@
                 font-size: 15px;
                 border-color: darkslategrey;
                 border-radius: 10px;
+
+                @include mobile{
+                    width: 200px;
+                    height: 30px;
+                }
             }
 
             textarea{
@@ -41,6 +53,11 @@
                 font-size: 15px;
                 border-color: darkslategrey;
                 border-radius: 10px;
+
+                @include mobile{
+                    width: 200px;
+                    height: 110px;
+                }
             }
 
             button{

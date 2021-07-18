@@ -1,6 +1,6 @@
 $mainColor: indigo;
 
-$width: 768px;
+$width: 769px;
 
 @mixin mobile {
     @media (max-width: #{$width}) {
