@@ -8,8 +8,8 @@ export default function Contact() {
             </div>
             <div className="p2">
                 <form action="">
-                    <input type="email" placeholder="Email" />
-                    <textarea placeholder="Message"></textarea>
+                    <input type="email" placeholder=" Email" />
+                    <textarea placeholder=" Message"></textarea>
                     <button type="submit">Send</button>
                 </form>
             </div>
