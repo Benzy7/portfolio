@@ -26,50 +26,5 @@
         align-items: center;
         justify-content: center;
 
-        form{
-            width: 70%;
-            height: 95%;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: space-around;
-
-            input{
-                width: 700px;
-                height: 30px;
-                font-size: 15px;
-                border-color: darkslategrey;
-                border-radius: 10px;
-
-                @include mobile{
-                    width: 200px;
-                    height: 30px;
-                }
-            }
-
-            textarea{
-                width: 700px;
-                height: 100px;
-                font-size: 15px;
-                border-color: darkslategrey;
-                border-radius: 10px;
-
-                @include mobile{
-                    width: 200px;
-                    height: 110px;
-                }
-            }
-
-            button{
-                width: 350px;
-                height: 40px;
-                color: white;
-                background-color: darkslategrey;
-                border: none;
-                border-radius: 20px;
-                font-weight: 500;
-                cursor: pointer;
-            }
-        }
     }
 }

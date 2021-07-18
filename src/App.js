@@ -7,6 +7,7 @@ import "./app.scss"
 import {useState} from 'react';
 import SideMenu from "./components/sideMenu/SideMenu";
 
+
 function App() {
   const [sideBar, setSideBar] = useState(false);
   return (

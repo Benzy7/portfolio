@@ -1,3 +1,4 @@
+import ContactForm from "../contactForm/ContactForm"
 import "./contact.scss"
 
 export default function Contact() {
@@ -7,11 +8,7 @@ export default function Contact() {
                 <img src="assets/contact.jpg" alt="" />
             </div>
             <div className="p2">
-                <form action="">
-                    <input type="email" placeholder=" Email" />
-                    <textarea placeholder=" Message"></textarea>
-                    <button type="submit">Send</button>
-                </form>
+                <ContactForm />
             </div>
         </div>
     )
