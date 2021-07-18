@@ -30,9 +30,9 @@ export default function ContactForm() {
 
     return (
         <form action="" onSubmit={sendEmail}>
-                <input type="text" placeholder=" Name"/>
-                <input type="email" placeholder=" Email" required="true"/>
-                <textarea placeholder=" Message" required="true"></textarea>
+                <input name="name" type="text" placeholder=" Name"/>
+                <input name="email" type="email" placeholder=" Email" required="true"/>
+                <textarea name="message" placeholder=" Message" required="true"></textarea>
                 <button type="submit">Send</button>
             <div className="sc">
                 {result ? <Result /> : null}
