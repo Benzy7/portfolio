@@ -27,7 +27,7 @@ export default function Exp() {
             hc: "tt",
             title: "Tunisie Telecom ",
             desc: "Development of an application for managing customer service and complaints.",
-            img: "assets/ttt.png",
+            img: "assets/ttcs.png",
         }, 
     ];
 
