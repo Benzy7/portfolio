@@ -3,17 +3,22 @@
 .contact{
     background-color: white; 
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+
+    @include mobile{
+        flex-direction: column;
+    }
 
     .p1{
-        flex: 1.5;
+        flex: 1;
         overflow: hidden;
 
         img{
-            width: 100%;
+            width: 95%;
+            height: 100%;
 
             @include mobile{
-                width: 500px;
+                width: 400px;
                 height: 300px;
             }
         }
@@ -25,6 +30,17 @@
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        h2{
+            font-size: 30px;
+            font-weight: 700;
+            margin: 1.5em 0; 
+
+            @include mobile{
+                margin: 0.5em 0;
+            }
+            
+        }
 
     }
 }
