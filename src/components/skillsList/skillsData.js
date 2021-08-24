@@ -26,8 +26,8 @@ export const featuredSkills = [
     },
     {
         id: 6,
-        title: "ExpressJs",
-        img: "assets/express.png"
+        title: "Laravel",
+        img: "assets/Laravel.png"
     },
 ];
 
