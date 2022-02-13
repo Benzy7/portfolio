@@ -1,18 +1,19 @@
 export const featuredSkills = [
     {
         id: 1,
-        title: "Creativity ",
-        img: "assets/crt.jpg"
+        title: "Angular",
+        img: "assets/angular.jpg"
+
     },
     {
         id: 2,
-        title: "Problem Solving",
-        img: "assets/prb-sv.png"
+        title: "Django ",
+        img: "assets/django.png"
     },
     {
         id: 3,
-        title: "Team Work",
-        img: "assets/team.webp"
+        title: "Express",
+        img: "assets/express.png"
     },
     {
         id: 4,
@@ -54,8 +55,8 @@ export const webSkills = [
     },
     {
         id: 5,
-        title: "MySql",
-        img: "assets/mysql.png"
+        title: "TypeScript",
+        img: "assets/ts.svg"
     },
     {
         id: 6,
@@ -80,23 +81,23 @@ export const mobileSkills = [
 export const langSkills = [
     {
         id: 1,
-        title: "Java",
-        img: "assets/java.jpg"
-    },
-    {
-        id: 2,
-        title: "C",
-        img: "assets/c.jpg"
-    },
-    {
-        id: 3,
         title: "Python",
         img: "assets/python.png"
     },
     {
+        id: 2,
+        title: "Java",
+        img: "assets/java.jpg"
+    },
+    {
+        id: 3,
+        title: "R",
+        img: "assets/r.png"
+    },
+    {
         id: 4,
-        title: "SQL",
-        img: "assets/sql.png"
+        title: "C",
+        img: "assets/c.jpg"
     },
     {
         id: 5,
