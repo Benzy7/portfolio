@@ -5,7 +5,17 @@ export default function Exp() {
 
     const [slide, setSlide] = useState(0);
     const expData = [
-         {
+            {
+                id: "1",
+                hc: "tiktak",
+                icon: "assets/tiktak.png",
+                title: "TikTak PRO",
+                link: "https://tiktakpro.tn/",
+                desc: "Development, Maintenance and improvement of the TikTak PRO e-commerce management web application.",
+                img: "assets/titakpre.jpg",
+            }
+
+         /* {
             id: "1",
             hc: "cmf",
             icon: "assets/cmf.png",
@@ -28,7 +38,10 @@ export default function Exp() {
             title: "Tunisie Telecom ",
             desc: "Development of an application for managing customer service and complaints.",
             img: "assets/ttcs.png",
-        }, 
+        },
+            <img src="assets/arrow-100.png" className="arrow left" alt="" onClick={() => handleClick("left")} />
+            <img src="assets/arrow-100.png" className="arrow right" alt="" onClick={() => handleClick("right")} />
+        */ 
     ];
 
     const handleClick = (side) => {
@@ -48,6 +61,10 @@ export default function Exp() {
         }
     }
 
+    const redirectClick = (link) => {
+        window.location = link;
+    } 
+
     return (
         <div className="exp" id="exp">
             <div className="slider" style={{transform: `translateX(-${slide * 100}vw)` }}>
@@ -57,9 +74,9 @@ export default function Exp() {
                         <div className="p1">
                             <div className="p1Container">
                                 <div className="imgContainer">
-                                    <img src={d.icon} alt="" />
+                                    { d.icon ? <img src={d.icon} alt="" /> : "" }
                                 </div>
-                                <h2 className={d.hc}>{d.title}</h2>
+                                <h2 className={d.hc} onClick={() => redirectClick(d.link)}  >{d.title}</h2>
                                 <p>{d.desc}</p>
                             </div>
                         </div>
@@ -71,8 +88,6 @@ export default function Exp() {
                 </div>
                 ))} 
             </div>
-            <img src="assets/arrow-100.png" className="arrow left" alt="" onClick={() => handleClick("left")} />
-            <img src="assets/arrow-100.png" className="arrow right" alt="" onClick={() => handleClick("right")} />
         </div>
     )
 }

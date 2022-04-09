@@ -25,7 +25,7 @@ export default function Intro() {
                 <div className="infoBox">
                     <h2>Hi there, I'm</h2>
                     <h1>Khoubaib Benzayed</h1>
-                    <h3>Freelance <span ref={textRef}></span></h3>
+                    <h3><span ref={textRef}></span></h3>
                 </div>
                 <a href="#skills">
                     <img src="assets/expand-arrow-30.png" alt="" />

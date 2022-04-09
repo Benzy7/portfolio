@@ -115,6 +115,14 @@
                         &.cmf{
                             color: rgb(84, 156, 156);
                         }
+
+                        &.tiktak{
+                            cursor: pointer;
+
+                            &:hover{
+                                color: #f25c19;
+                            }
+                        }
                     }
 
                     p{
