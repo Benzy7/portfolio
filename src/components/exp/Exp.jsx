@@ -3,7 +3,8 @@ import "./exp.scss"
 
 export default function Exp() {
 
-    const [slide, setSlide] = useState(0);
+    //setSlide
+    const [slide] = useState(0);
     const expData = [
             {
                 id: "1",
@@ -44,7 +45,7 @@ export default function Exp() {
         */ 
     ];
 
-    const handleClick = (side) => {
+/*    const handleClick = (side) => {
          if(side === "left"){
             if (slide > 0) {
                 setSlide(slide - 1);
@@ -60,7 +61,7 @@ export default function Exp() {
             }
         }
     }
-
+*/
     const redirectClick = (link) => {
         window.location = link;
     } 
