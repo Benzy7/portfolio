@@ -25,6 +25,11 @@
             right: 100px;
             transform: rotate(90deg);
         }
+
+        &.disabled{
+            opacity: 0.5;
+            cursor: auto;
+        }
     }
 
     .slider{
@@ -121,6 +126,14 @@
 
                             &:hover{
                                 color: #f25c19;
+                            }
+                        }
+
+                        &.xtend{
+                            cursor: pointer;
+
+                            &:hover{
+                                color: #c10000;
                             }
                         }
                     }

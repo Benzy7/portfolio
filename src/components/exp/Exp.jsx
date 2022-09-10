@@ -3,19 +3,30 @@ import "./exp.scss"
 
 export default function Exp() {
 
-    //setSlide
-    const [slide] = useState(0);
+    const [slide, setSlide] = useState(0);
     const expData = [
-            {
-                id: "1",
-                hc: "tiktak",
-                icon: "assets/tiktak.png",
-                title: "TikTak PRO",
-                link: "https://tiktakpro.tn/",
-                desc: "Development, Maintenance and improvement of the TikTak PRO e-commerce management web application.",
-                img: "assets/titakpre.jpg",
-            }
-
+        {
+            id: "1",
+            hc: "tiktak",
+            icon: "assets/tiktak.png",
+            title: "TikTak PRO",
+            link: "https://tiktakpro.tn/",
+            desc: "Development, Maintenance and improvement of the TikTak PRO e-commerce management web application.",
+            img: "assets/titakpre.jpg",
+            next: true,
+            prev: false
+        },
+        {
+            id: "2",
+            hc: "xtend",
+            icon: "assets/xtend.png",
+            title: "XtendPlex",
+            link: "https://www.xtendplex.com/",
+            desc: "Développement et maintenance d'une solution de gestion publicitaire intelligente et autres projets.",
+            img: "assets/xtendtv.webp",
+            next: false,
+            prev: true
+        }
          /* {
             id: "1",
             hc: "cmf",
@@ -40,30 +51,31 @@ export default function Exp() {
             desc: "Development of an application for managing customer service and complaints.",
             img: "assets/ttcs.png",
         },
-            <img src="assets/arrow-100.png" className="arrow left" alt="" onClick={() => handleClick("left")} />
-            <img src="assets/arrow-100.png" className="arrow right" alt="" onClick={() => handleClick("right")} />
         */ 
     ];
 
-/*    const handleClick = (side) => {
-         if(side === "left"){
-            if (slide > 0) {
-                setSlide(slide - 1);
-            }else{
-                setSlide(2);
+    const handleClick = (side, enable) => {
+        if (enable){
+            if(side === "left"){
+                if (slide > 0) {
+                    setSlide(slide - 1);
+                }else{
+                    setSlide(2);
+                }
             }
-        }
-        else if(side === "right"){
-            if (slide < (expData.length - 1)) {
-                setSlide(slide + 1);
-            }else{
-                setSlide(0);
+            else if(side === "right"){
+                if (slide < (expData.length - 1)) {
+                    setSlide(slide + 1);
+                }else{
+                    setSlide(0);
+                }
             }
         }
     }
-*/
+
     const redirectClick = (link) => {
-        window.location = link;
+        // window.location = link;
+        window.open(link, '_blank').focus();
     } 
 
     return (
@@ -89,6 +101,8 @@ export default function Exp() {
                 </div>
                 ))} 
             </div>
+            <img src="assets/arrow-100.png" className={ expData[slide].prev ? 'arrow left' : 'arrow left disabled'} alt="" onClick={() => handleClick("left", expData[slide].prev)} />
+            <img src="assets/arrow-100.png" className={ expData[slide].next ? 'arrow right' : 'arrow right disabled'} alt="" onClick={() => handleClick("right", expData[slide].next)} />
         </div>
     )
 }
